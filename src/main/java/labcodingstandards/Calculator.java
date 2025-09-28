@@ -1,5 +1,4 @@
-//
-//
+// Copyright (C) 2025
 
 package labcodingstandards;
 
@@ -13,7 +12,7 @@ import java.util.Scanner;
 public class Calculator {	
 	
 	public static void main(String[] args) {
-		Scanner reader = new Scanner(System.in);
+	    Scanner reader = new Scanner(System.in);
 		
         System.out.print("1. +\n2. -\n3. *\n4. /\nEnter an operator: ");
         
@@ -46,18 +45,18 @@ public class Calculator {
             }
         }
 
-        Calculator cal=new Calculator();
-        String result=cal.Operation(First,second,operator);
+        Calculator cal = new Calculator();
+        String result = cal.operation(First, second, operator);
 
         System.out.printf(result);
 		reader.close();
 	}
 
-	private String Operation(double first,double second,char operator) {
+	private String operation(double first, double second, char operator) {
 		double result = 0;
 		switch(operator)
         {
-            case '1':
+		case '1':
                 result=first+second;
                 break;
             case '2':
